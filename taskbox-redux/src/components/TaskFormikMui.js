@@ -3,7 +3,6 @@ import * as Yup from 'yup'
 
 import { Box, Button, Stack, TextField } from "@mui/material";
 import SaveIcon from '@mui/icons-material/Save';
-//import { DatePicker } from '@mui/x-date-pickers';
 
 const TaskFormikMui = (props) => {
     const { handleSubmission, title: taskTitle, body: taskBody, dueDate: taskDueDate } = props
@@ -47,13 +46,7 @@ const TaskFormikMui = (props) => {
                         helperText={formik.touched.body && formik.errors.body}
                     />
 
-                    {/* <DatePicker
-                        name='dueDate'
-                        label="Basic example"
-                        value={formik.values.dueDate}
-                        onChange={formik.handleChange}
-                        renderInput={(params) => <TextField {...params} />}
-                    /> */}
+
 
                     <TextField
                         focused
